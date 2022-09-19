@@ -60,12 +60,12 @@ export const Board = () => {
 
   return (
     <div>
-      <h1 className="mb-2 px-4 pt-4 text-2xl font-semibold">{board?.name}</h1>
-      <div className="mt-2 mb-6 border-b px-4">
+      <h1 className="mb-2 px-6 pt-4 text-2xl font-semibold">{board?.name}</h1>
+      <div className="mt-2 border-b px-6">
         {views.map((view) => {
           return (
             <span
-              className={`mr-4 cursor-pointer ${
+              className={`mr-4 pb-2 inline-block cursor-pointer ${
                 currentView === view ? "border-b-2 border-stone-900" : ""
               }`}
               onClick={() => {

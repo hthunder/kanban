@@ -17,7 +17,7 @@ export const NewSectionForm = (props: {
     >
       +
       <input
-        className="ml-2"
+        className="ml-2 bg-transparent"
         placeholder="Add section"
         value={sectionInput}
         onChange={(e) => {

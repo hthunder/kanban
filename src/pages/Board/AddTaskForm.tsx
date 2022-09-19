@@ -18,7 +18,7 @@ export const AddTaskForm = (props: {
         +
         <input
           placeholder="Add task"
-          className="ml-2"
+          className="ml-2 bg-transparent"
           type="text"
           value={task}
           onChange={(e) => {

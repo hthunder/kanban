@@ -38,10 +38,12 @@ export const BoardView = (props: {
   const [hoveredTask, setHoveredTask] = useState<string | null>(null);
 
   return (
-    <div className="mx-4 flex min-h-screen max-w-full overflow-scroll border">
+    <div className="flex min-h-screen max-w-full overflow-scroll bg-neutral-100 px-4">
       {sections?.map((section) => (
-        <section key={section.id} className="w-80 border">
-          <h2 className="border-b py-2 px-1 text-center">{section.heading}</h2>
+        <section key={section.id} className="w-80">
+          <h2 className="py-2 px-2 text-left text-lg font-medium">
+            {section.heading}
+          </h2>
           <div className="px-2">
             <ul className="mb-2">
               {section.tasks.map((taskId) => (

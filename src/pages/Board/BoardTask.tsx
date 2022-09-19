@@ -28,7 +28,7 @@ export const BoardTask = (props: {
   return (
     <li
       key={task.id}
-      className="relative my-2 min-h-[72px] rounded-lg border px-2 py-2 hover:cursor-pointer"
+      className="relative my-2 min-h-[72px] rounded-lg border bg-white px-2 py-2 hover:cursor-pointer"
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
